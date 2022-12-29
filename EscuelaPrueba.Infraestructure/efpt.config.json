@@ -1,0 +1,49 @@
+{
+  "CodeGenerationMode": 2,
+  "ContextClassName": "EscuelaContext",
+  "ContextNamespace": null,
+  "DefaultDacpacSchema": null,
+  "FilterSchemas": false,
+  "IncludeConnectionString": false,
+  "ModelNamespace": null,
+  "OutputContextPath": "Data",
+  "OutputPath": "Data",
+  "PreserveCasingWithRegex": true,
+  "ProjectRootNamespace": "Escuela.Infraestructure",
+  "Schemas": null,
+  "SelectedHandlebarsLanguage": 0,
+  "SelectedToBeGenerated": 0,
+  "Tables": [
+    {
+      "Name": "[dbo].[Curso]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Estudiante]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Profesor]",
+      "ObjectType": 0
+    }
+  ],
+  "UiHint": "DESKTOP-T3S73U1\\SQLEXPRESS.EscuelaPrueba",
+  "UseBoolPropertiesWithoutDefaultSql": false,
+  "UseDatabaseNames": true,
+  "UseDbContextSplitting": false,
+  "UseFluentApiOnly": true,
+  "UseHandleBars": false,
+  "UseHierarchyId": false,
+  "UseInflector": false,
+  "UseLegacyPluralizer": false,
+  "UseManyToManyEntity": false,
+  "UseNoConstructor": false,
+  "UseNoDefaultConstructor": false,
+  "UseNoNavigations": false,
+  "UseNoObjectFilter": false,
+  "UseNodaTime": false,
+  "UseNullableReferences": false,
+  "UseSchemaFolders": false,
+  "UseSpatial": false,
+  "UseT4": false
+}

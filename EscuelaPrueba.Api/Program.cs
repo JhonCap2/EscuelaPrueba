@@ -1,4 +1,21 @@
+using EscuelaPrueba.Core.Interface;
+using EscuelaPrueba.Infraestructure.Data;
+using EscuelaPrueba.Infraestructure.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddTransient<IEstudiantesRepository, EstudianteRepository>();
+
+builder.Services.AddTransient<ICusosRepository, CursoRepository>();
+
+builder.Services.AddTransient<IProfesorRepository, ProfesorRepository>();
+
+builder.Services.AddDbContext<EscuelaContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EscuelaPrueba"))
+);
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // Add services to the container.
 
