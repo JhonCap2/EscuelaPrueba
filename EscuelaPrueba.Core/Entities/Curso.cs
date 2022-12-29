@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace EscuelaPrueba.Infraestructure.Data;
 
@@ -13,7 +14,8 @@ public partial class Curso
 
     public string? Aula { get; set; }
 
-    public virtual Estudiante IdEstudianteNavigation { get; set; } = null!;
-
-    public virtual Profesor IdProfesorNavigation { get; set; } = null!;
+    [JsonIgnore]
+    public virtual Estudiante? IdEstudianteNavigation { get; set; }
+    [JsonIgnore]
+    public virtual Profesor? IdProfesorNavigation { get; set; }
 }

@@ -15,8 +15,10 @@ namespace EscuelaPrueba.Infraestructure.Mappings
         {
             CreateMap<Curso, CursoDto>();
             CreateMap<CursoDto, Curso>();
+
             CreateMap<Estudiante, EstudianteDto>();
             CreateMap<EstudianteDto, Estudiante>();
+
             CreateMap<Profesor, ProfesorDto>();
             CreateMap<ProfesorDto, Profesor>();
 

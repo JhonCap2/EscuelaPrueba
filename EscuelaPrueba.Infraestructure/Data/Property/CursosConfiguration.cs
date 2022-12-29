@@ -25,15 +25,17 @@ namespace EscuelaPrueba.Infraestructure.Data.Property
                     .IsUnicode(false)
                     .HasColumnName("Aula");
 
-            builder.HasOne(d => d.IdEstudianteNavigation).WithMany(p => p.Cursos)
+            builder.HasOne(d => d.IdEstudianteNavigation)
+                    .WithMany(p => p.Cursos)
                     .HasForeignKey(d => d.IdEstudiante)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("IdEstudiante");
+                    .HasConstraintName("FK__Curso__IdEstudia__3A81B327");
 
-            builder.HasOne(d => d.IdProfesorNavigation).WithMany(p => p.Cursos)
+            builder.HasOne(d => d.IdProfesorNavigation)
+                    .WithMany(p => p.Cursos)
                     .HasForeignKey(d => d.IdProfesor)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("IdProfesor");
+                    .HasConstraintName("FK__Curso__IdProfeso__3B75D760");
             
         }
     }
